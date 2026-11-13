@@ -62,7 +62,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        # Forks leave out macOS, as for the macOS app jobs below.
+        os: ${{ fromJSON(github.event.repository.fork && '["ubuntu-latest", "windows-latest"]' || '["ubuntu-latest", "windows-latest", "macos-latest"]') }}
     steps:
       - uses: actions/checkout@v7
       - name: Install the pinned Rust toolchain
