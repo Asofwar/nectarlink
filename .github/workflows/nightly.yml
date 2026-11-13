@@ -74,10 +74,11 @@ jobs:
           # run on the newest commit alone doesn't mean its code was tested.
           # The newest passing push run whose Windows app job ran is the last
           # tested commit (a failure, or a run still going, waits for the
-          # next slot).
+          # next slot). A run started by hand on main counts too: a fork may
+          # not run CI on its pushes.
           tested=""
-          for run in $(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/ci.yml/runs?branch=main&event=push&status=success&per_page=50" \
-            --jq '.workflow_runs[] | "\(.id):\(.head_sha)"'); do
+          for run in $(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/ci.yml/runs?branch=main&status=success&per_page=50" \
+            --jq '.workflow_runs[] | select(.event == "push" or .event == "workflow_dispatch") | "\(.id):\(.head_sha)"'); do
             built_here=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/${run%%:*}/jobs?per_page=100" \
               --jq '[.jobs[] | select(.name == "Windows app (x64)" and .conclusion == "success")] | length')
             if [ "$built_here" -gt 0 ]; then tested="${run#*:}"; break; fi
