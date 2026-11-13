@@ -176,7 +176,7 @@
     <message>
         <location filename="rust_strings.h" line="41"/>
         <source>Your phone</source>
-        <translation>Ваш телефон</translation>
+        <translation>Телефон</translation>
     </message>
 </context>
 <context>
@@ -329,7 +329,7 @@
     <message>
         <location filename="rust_strings.h" line="48"/>
         <source>Your phone</source>
-        <translation>Ваш телефон</translation>
+        <translation>Телефон</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="43"/>
@@ -1193,7 +1193,7 @@
     <message>
         <location filename="rust_strings.h" line="130"/>
         <source>Send live keystrokes and text to %1 without screen mirroring</source>
-        <translation>Набирать текст на %1 в реальном времени без показа экрана</translation>
+        <translation>Набирать текст на %1 в реальном времени без трансляции экрана</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="131"/>
@@ -2716,7 +2716,7 @@
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="216"/>
         <source>Screen mirroring</source>
-        <translation>Экран телефона</translation>
+        <translation>Трансляция экрана</translation>
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="221"/>
@@ -2771,7 +2771,7 @@
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="249"/>
         <source>Opt-in Screen mirroring toggle on Home</source>
-        <translation>Переключатель «Показ экрана» на главной</translation>
+        <translation>Переключатель «Трансляция экрана» на главной</translation>
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="255"/>
@@ -2917,7 +2917,7 @@
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="352"/>
         <source>Send live keystrokes and pasted text from your PC keyboard to your phone without screen mirroring.</source>
-        <translation>Набирайте текст на телефоне с клавиатуры ПК и вставляйте его без показа экрана.</translation>
+        <translation>Набирайте текст на телефоне с клавиатуры ПК и вставляйте его без трансляции экрана.</translation>
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="353"/>
@@ -3380,7 +3380,7 @@ Capability tiers on Android
     <message>
         <location filename="rust_strings.h" line="303"/>
         <source>Screen mirroring</source>
-        <translation>Экран телефона</translation>
+        <translation>Трансляция экрана</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="304"/>
@@ -3540,7 +3540,7 @@ Where to find it
 What it needs
 - Assist mode (Accessibility service), the NectarLink input method, or Elevated mode on your phone.</source>
         <translation>Что делает
-Передаёт нажатия клавиш и вставленный текст с клавиатуры ПК прямо на телефон без показа экрана телефона.
+Передаёт нажатия клавиш и вставленный текст с клавиатуры ПК прямо на телефон без трансляции экрана.
 
 Где найти
 - Главная › Печать на телефоне.
@@ -5883,7 +5883,7 @@ What it needs
     <message>
         <location filename="rust_strings.h" line="379"/>
         <source>The phone ignores taps from this PC. In its Developer options, turn on USB debugging (Security settings).</source>
-        <translation>Телефон игнорирует нажатия с этого ПК. В его параметрах для разработчиков включите «Отладка по USB (настройки безопасности)».</translation>
+        <translation>Телефон игнорирует нажатия с этого ПК. В разделе «Для разработчиков» на телефоне включите «Отладка по USB (настройки безопасности)».</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="380"/>
@@ -5956,12 +5956,12 @@ What it needs
     <message>
         <location filename="../qml/MirrorWindow.qml" line="448"/>
         <source>Phone stays awake while mirroring (turn off)</source>
-        <translation>Телефон не засыпает во время показа (выключить)</translation>
+        <translation>Телефон не засыпает во время трансляции (выключить)</translation>
     </message>
     <message>
         <location filename="../qml/MirrorWindow.qml" line="449"/>
         <source>Keep phone awake while mirroring</source>
-        <translation>Не давать телефону засыпать во время показа</translation>
+        <translation>Не давать телефону засыпать во время трансляции</translation>
     </message>
     <message>
         <location filename="../qml/MirrorWindow.qml" line="458"/>
@@ -5971,7 +5971,7 @@ What it needs
     <message>
         <location filename="../qml/MirrorWindow.qml" line="459"/>
         <source>Turn phone screen off while mirroring</source>
-        <translation>Выключать экран телефона во время показа</translation>
+        <translation>Выключать экран телефона во время трансляции</translation>
     </message>
     <message>
         <location filename="../qml/MirrorWindow.qml" line="483"/>
@@ -6344,7 +6344,7 @@ What it needs
     <message>
         <location filename="../qml/components/NowPlaying.qml" line="739"/>
         <source>Mute</source>
-        <translation>Выключить микрофон</translation>
+        <translation>Выключить звук</translation>
     </message>
     <message>
         <location filename="../qml/components/NowPlaying.qml" line="825"/>
@@ -7456,7 +7456,7 @@ What it needs
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="64"/>
         <source>Sleep this PC</source>
-        <translation>Перевести этот ПК в сон</translation>
+        <translation>Перевести этот ПК в спящий режим</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="66"/>
@@ -7569,7 +7569,7 @@ What it needs
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="179"/>
         <source>Screen mirroring</source>
-        <translation>Экран телефона</translation>
+        <translation>Трансляция экрана</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="180"/>
@@ -8037,7 +8037,7 @@ What it needs
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="28"/>
         <source>Help keep it going</source>
-        <translation>Помогите проекту жить</translation>
+        <translation>Помогите проекту развиваться</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="562"/>
@@ -8090,7 +8090,7 @@ What it needs
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="1697"/>
         <source>Mirror quality</source>
-        <translation>Качество показа экрана</translation>
+        <translation>Качество трансляции</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="1699"/>
@@ -9161,17 +9161,17 @@ What it needs
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3544"/>
         <source>The newest build from every couple of hours, with the latest fixes and features, and sometimes new bugs. Back on Stable, this PC keeps its build until the next release is newer.</source>
-        <translation>Новейшая сборка раз в пару часов, с последними исправлениями и функциями, а иногда и с новыми ошибками. При возврате на Stable этот ПК оставит свою сборку, пока следующий выпуск не будет новее.</translation>
+        <translation>Новейшая сборка раз в пару часов, с последними исправлениями и функциями, а иногда и с новыми ошибками. При возврате на стабильный канал этот ПК оставит свою сборку, пока следующий выпуск не будет новее.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3545"/>
         <source>Releases, tested and less often.</source>
-        <translation>Выпуски: проверенные и реже.</translation>
+        <translation>Релизы: проверенные, выходят реже.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3548"/>
         <source>Stable</source>
-        <translation>Stable</translation>
+        <translation>Стабильный</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3549"/>
@@ -9196,7 +9196,7 @@ What it needs
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="1214"/>
         <source>Full charge target</source>
-        <translation>Цель полной зарядки</translation>
+        <translation>Заряжать до</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="1215"/>
@@ -9811,7 +9811,7 @@ What it needs
     <message>
         <location filename="rust_strings.h" line="486"/>
         <source>Screen mirroring</source>
-        <translation>Экран телефона</translation>
+        <translation>Трансляция экрана</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="487"/>
@@ -10451,7 +10451,7 @@ What it needs
         <location filename="../qml/pages/WalkthroughPage.qml" line="91"/>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1392"/>
         <source>Screen mirroring</source>
-        <translation>Экран телефона</translation>
+        <translation>Трансляция экрана</translation>
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="92"/>
@@ -10615,7 +10615,7 @@ What it needs
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="125"/>
         <source>Your phone</source>
-        <translation>Ваш телефон</translation>
+        <translation>Телефон</translation>
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="189"/>

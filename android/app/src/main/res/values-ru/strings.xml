@@ -87,7 +87,7 @@
     <string name="channel_elevated">Настройка отладки по Wi-Fi</string>
     <string name="elevated_title">Elevated</string>
     <string name="elevated_not_set_up">Касания в реальном времени, любые клавиши, а также выключение микрофона, удержание и клавиатура в вызовах с ПК.</string>
-    <string name="elevated_waiting">Ожидание отладки по Wi-Fi. Включите её в параметрах для разработчиков.</string>
+    <string name="elevated_waiting">Ожидание отладки по Wi-Fi. Включите её в разделе «Для разработчиков».</string>
     <string name="elevated_starting">Запуск…</string>
     <string name="elevated_running">Вкл.: мышь и клавиатура ПК работают как настоящий сенсорный экран и клавиатура.</string>
     <string name="elevated_failed">Не удалось запустить. Проверьте, что отладка по Wi-Fi включена, и попробуйте снова.</string>
@@ -108,8 +108,8 @@
     <string name="elevated_turn_off">Выключить</string>
     <string name="elevated_try_again">Повторить</string>
     <string name="elevated_steps_title">Настройка отладки по Wi-Fi</string>
-    <string name="elevated_steps">Одноразовые коды в уведомлениях, которые Android скрывает как конфиденциальные, тоже будут приходить на ПК.\n\n1. Включите параметры для разработчиков: в Настройки › О телефоне 7 раз нажмите на номер сборки.\n2. В параметрах для разработчиков включите «Отладка по Wi-Fi» (при подключении к Wi-Fi), откройте её и нажмите «Подключить устройство с помощью кода подключения».\n3. Введите 6-значный код в уведомление NectarLink, не закрывая окно с кодом.</string>
-    <string name="elevated_open_developer">Открыть параметры для разработчиков</string>
+    <string name="elevated_steps">Одноразовые коды в уведомлениях, которые Android скрывает как конфиденциальные, тоже будут приходить на ПК.\n\n1. Включите режим разработчика: в Настройки › О телефоне 7 раз нажмите на номер сборки.\n2. В параметрах для разработчиков включите «Отладка по Wi-Fi» (при подключении к Wi-Fi), откройте её и нажмите «Подключить устройство с помощью кода подключения».\n3. Введите 6-значный код в уведомление NectarLink, не закрывая окно с кодом.</string>
+    <string name="elevated_open_developer">Открыть раздел «Для разработчиков»</string>
     <string name="elevated_pair_title">Связать NectarLink с отладкой по Wi-Fi</string>
     <string name="elevated_pair_text">В разделе «Отладка по Wi-Fi» нажмите «Подключить устройство с помощью кода подключения», затем введите код здесь.</string>
     <string name="elevated_pair_action">Ввести код</string>
@@ -257,11 +257,11 @@
     <string name="action_try_again">Повторить</string>
     <string name="action_cancel">Отмена</string>
     <string name="action_allow_camera">Разрешить камеру</string>
-    <string name="action_ring_pc">Позвонить на ПК</string>
+    <string name="action_ring_pc">Прозвонить ПК</string>
     <string name="action_stop_ringing">Остановить звонок</string>
     <string name="action_stop_service">Выключить</string>
     <string name="action_turn_on">Включить</string>
-    <string name="action_ring_device">Позвонить</string>
+    <string name="action_ring_device">Прозвонить</string>
     <string name="peer_kind_phone">Телефон</string>
     <string name="peer_kind_tablet">Планшет</string>
     <string name="action_unpair">Отвязать</string>
@@ -296,7 +296,7 @@
     <string name="wake_timeout_text">Проверьте, что:\n• Wake-on-LAN включён в BIOS/UEFI и в настройках сетевого адаптера в Windows (управление питанием и пробуждение по Magic Packet).\n• %1$s подключён по Ethernet, если он был выключен (по Wi-Fi пробуждение из выключенного состояния работает редко).\n• Этот телефон в той же сети, что и %1$s.</string>
     <string name="wake_not_ready">Один раз подключитесь к %1$s, чтобы телефон узнал его сетевой адрес.</string>
     <string name="pc_locked">%1$s заблокирован.</string>
-    <string name="pc_sleeping">%1$s переходит в сон.</string>
+    <string name="pc_sleeping">%1$s переходит в спящий режим.</string>
     <string name="pc_hibernating">%1$s переходит в гибернацию.</string>
     <string name="pc_actions_off">Блокировка и сон выключены для этого телефона на %1$s.</string>
     <string name="channel_links">Ссылки с ПК</string>
@@ -570,7 +570,7 @@
     <string name="continuity_camera_photo_title">Сделать фото</string>
     <string name="continuity_camera_for_pc">Для %1$s</string>
     <string name="continuity_camera_mode_photo">Фото</string>
-    <string name="continuity_camera_mode_scan">Скан</string>
+    <string name="continuity_camera_mode_scan">Документ</string>
     <string name="continuity_camera_enhance">Улучшить документ</string>
     <string name="continuity_camera_adjust_corners">Подправить углы</string>
     <string name="continuity_camera_preview_scan">Просмотр скана</string>
@@ -655,7 +655,7 @@
     <string name="keyboard_from_pc_banner">Печать с %1$s</string>
     <string name="keyboard_stop">Перестать печатать</string>
     <string name="widget_pc_title">Быстрые действия ПК</string>
-    <string name="widget_pc_description">Состояние подключения, отправка буфера обмена, звонок на ПК, блокировка и пробуждение связанного ПК.</string>
+    <string name="widget_pc_description">Состояние подключения, отправка буфера обмена, прозвон ПК, блокировка и пробуждение связанного ПК.</string>
     <string name="widget_pc_no_pc">Нет связанного ПК</string>
     <string name="widget_pc_tap_to_pair">Нажмите, чтобы открыть NectarLink и связать ПК</string>
     <string name="widget_pc_connected">Подключено</string>
@@ -663,7 +663,7 @@
     <string name="widget_pc_waking">Пробуждение…</string>
     <string name="widget_pc_wake">Разбудить</string>
     <string name="widget_pc_send_clip">Отправить фрагмент</string>
-    <string name="widget_pc_ring">Позвонить на ПК</string>
+    <string name="widget_pc_ring">Прозвонить ПК</string>
     <string name="widget_pc_lock">Заблокировать ПК</string>
     <string name="widget_pc_ringing_toast">Звонок на %1$s…</string>
     <string name="widget_pc_waking_toast">Пробуждение %1$s…</string>
@@ -798,7 +798,7 @@
     <string name="walkthrough_power_standard_desc">Уведомления, вызовы, сообщения, фото, файлы, плитка «Отправить буфер обмена» и показ экрана без управления.</string>
     <string name="walkthrough_power_assist_title">Assist</string>
     <string name="walkthrough_power_assist_sub">Сервис специальных возможностей</string>
-    <string name="walkthrough_power_assist_desc">Добавляет управление мышью и клавиатурой с ПК во время показа экрана.</string>
+    <string name="walkthrough_power_assist_desc">Добавляет управление мышью и клавиатурой с ПК во время трансляции экрана.</string>
     <string name="walkthrough_power_assist_manage">Управлять</string>
     <string name="walkthrough_power_assist_open">Включить</string>
     <string name="walkthrough_power_elevated_title">Elevated</string>
@@ -809,8 +809,8 @@
     <string name="walkthrough_power_elevated_hide_steps">Скрыть шаги</string>
     <string name="walkthrough_power_elevated_show_steps">Показать шаги</string>
     <string name="walkthrough_power_elevated_steps_heading">Настройка отладки по Wi-Fi</string>
-    <string name="walkthrough_power_elevated_step1">1. В Настройки › О телефоне 7 раз нажмите на номер сборки, чтобы включить параметры для разработчиков.</string>
-    <string name="walkthrough_power_elevated_step2">2. Нажмите «Настроить», чтобы открыть параметры для разработчиков.</string>
+    <string name="walkthrough_power_elevated_step1">1. В Настройки › О телефоне 7 раз нажмите на номер сборки, чтобы включить режим разработчика.</string>
+    <string name="walkthrough_power_elevated_step2">2. Нажмите «Настроить», чтобы открыть раздел «Для разработчиков».</string>
     <string name="walkthrough_power_elevated_step3">3. Включите «Отладка по Wi-Fi», нажмите «Подключить устройство с помощью кода подключения» и введите 6-значный код в уведомление.</string>
     <string name="walkthrough_done_title">Настройка завершена</string>
     <string name="walkthrough_done_subtitle">NectarLink готов. Снова открыть эту настройку можно в Настройки › О приложении.</string>
@@ -1054,7 +1054,7 @@
     <string name="guide_mirror_opt_1">Стоп: сразу прекращает запись экрана с главной или из уведомления.</string>
     <string name="guide_mirror_privacy">Требует подтверждения на телефоне, если трансляция не запущена через виртуальный дисплей Elevated.</string>
     <string name="guide_mirror_limits">Приложения с FLAG_SECURE в обычной трансляции MediaProjection показываются чёрными.</string>
-    <string name="guide_apps_title">Окна приложений</string>
+    <string name="guide_apps_title">Приложения в окнах</string>
     <string name="guide_apps_summary">Открывайте отдельные приложения Android в собственных окнах на ПК, а экран телефона остаётся независимым.</string>
     <string name="guide_apps_where">Настройки › Разрешения › Управление с ПК › Настоящие касания и клавиши (отладка по Wi-Fi)</string>
     <string name="guide_apps_needs">Elevated (отладка по Wi-Fi)</string>
@@ -1075,7 +1075,7 @@
     <string name="guide_webcam_opt_1">Смена камеры / Фонарик / Зум / Разрешение (720p, 1080p, 4K): управление камерой в реальном времени.</string>
     <string name="guide_webcam_privacy">Никогда не включается незаметно; во время трансляции показывается постоянное уведомление.</string>
     <string name="guide_webcam_limits">Для 1080p 60 к/с и 4K нужен аппаратный кодировщик и быстрый Wi-Fi или USB.</string>
-    <string name="guide_continuity_title">Камера для ПК</string>
+    <string name="guide_continuity_title">Камера телефона</string>
     <string name="guide_continuity_summary">Снимайте фото или сканируйте и обрезайте документы камерой телефона прямо на ПК.</string>
     <string name="guide_continuity_where">Запрос с ПК › Запрос камеры на телефоне</string>
     <string name="guide_continuity_needs">Разрешение на камеру, связанный ПК в сети</string>
@@ -1121,7 +1121,7 @@
     <string name="guide_elevated_summary">Настоящие касания и клавиши, окна приложений, фоновая синхронизация буфера обмена и управление вызовом через отладку по Wi-Fi.</string>
     <string name="guide_elevated_where">Настройки › Разрешения › Управление с ПК › Настоящие касания и клавиши (отладка по Wi-Fi)</string>
     <string name="guide_elevated_needs">Отладка по Wi-Fi</string>
-    <string name="guide_elevated_need_1">Включены параметры для разработчиков и отладка по Wi-Fi.</string>
+    <string name="guide_elevated_need_1">Включены режим разработчика и отладка по Wi-Fi.</string>
     <string name="guide_elevated_phone_1">Откройте Настройки › Разрешения › Управление с ПК и нажмите «Настроить» в пункте «Настоящие касания и клавиши».</string>
     <string name="guide_elevated_phone_2">В разделе «Отладка по Wi-Fi» нажмите «Подключить устройство с помощью кода подключения» и введите 6-значный код в уведомление.</string>
     <string name="guide_elevated_pc_1">Пользуйтесь окнами приложений, фоновой синхронизацией буфера обмена и вводом с низкой задержкой с ПК.</string>
@@ -1160,13 +1160,13 @@
     <string name="guide_wake_privacy">Использует MAC-адрес, полученный во время прошлого проверенного сеанса в локальной сети.</string>
     <string name="guide_wake_limits">Нужен Ethernet или адаптер Wi-Fi с поддержкой Wake on Wireless LAN.</string>
     <string name="guide_quick_title">Быстрые действия</string>
-    <string name="guide_quick_summary">Звоните на ПК, блокируйте его или отправляйте в сон с главной или виджета, а с ПК управляйте режимом «Не беспокоить», фонариком и яркостью телефона.</string>
+    <string name="guide_quick_summary">Прозванивайте ПК, блокируйте его или переводите в спящий режим с главной или виджета, а с ПК управляйте режимом «Не беспокоить», фонариком и яркостью телефона.</string>
     <string name="guide_quick_where">Главная › Карточка связанного ПК (и Настройки › Разрешения › Управление с ПК)</string>
     <string name="guide_quick_needs">Доступ к «Не беспокоить» и разрешение на яркость экрана для переключателей с ПК</string>
-    <string name="guide_quick_need_1">Звонок на ПК, блокировка, сон и фонарик телефона работают без дополнительных разрешений.</string>
+    <string name="guide_quick_need_1">Прозвон ПК, блокировка, спящий режим и фонарик телефона работают без дополнительных разрешений.</string>
     <string name="guide_quick_need_2">Для «Не беспокоить» и беззвучного режима нужен доступ к «Не беспокоить».</string>
     <string name="guide_quick_need_3">Для управления яркостью телефона нужно разрешение на яркость экрана или Elevated.</string>
-    <string name="guide_quick_phone_1">Используйте «Позвонить на ПК», «Заблокировать ПК» и «Сон» в карточке связанного ПК на главной или добавьте виджет быстрых действий ПК.</string>
+    <string name="guide_quick_phone_1">Используйте «Прозвонить ПК», «Заблокировать ПК» и «Сон» в карточке связанного ПК на главной или добавьте виджет быстрых действий ПК.</string>
     <string name="guide_quick_pc_1">Переключайте «Не беспокоить», звонок, фонарик, громкость и яркость телефона из NectarLink на ПК.</string>
     <string name="guide_quick_opt_1">«Не беспокоить» / Яркость экрана: разрешаются в Настройки › Разрешения › Управление с ПК.</string>
     <string name="guide_quick_privacy">Команды проверяются для каждого устройства и передаются по TLS 1.3.</string>
@@ -1210,11 +1210,11 @@
     <string name="update_nightly">Nightly %1$d</string>
     <string name="update_nightly_named">Nightly %1$d (%2$s)</string>
     <string name="update_channel_title">Канал обновлений</string>
-    <string name="update_channel_stable">Stable</string>
+    <string name="update_channel_stable">Стабильный</string>
     <string name="update_channel_nightly">Nightly</string>
-    <string name="update_channel_stable_text">Релизы: проверенные и реже.</string>
-    <string name="update_channel_nightly_text">Самая свежая сборка раз в пару часов, с последними исправлениями и функциями, а иногда и с новыми ошибками. При возврате на Stable телефон оставит свою сборку, пока следующий релиз не станет новее.</string>
-    <string name="home_guide_title">Обзор</string>
+    <string name="update_channel_stable_text">Релизы: проверенные, выходят реже.</string>
+    <string name="update_channel_nightly_text">Самая свежая сборка раз в пару часов, с последними исправлениями и функциями, а иногда и с новыми ошибками. При возврате на стабильный канал телефон оставит свою сборку, пока следующий релиз не станет новее.</string>
+    <string name="home_guide_title">Руководство</string>
     <string name="home_whats_new_guide">Новое: обзор функций</string>
     <string name="home_guide_card_body">Узнайте обо всех функциях NectarLink, проверьте разрешения или нажмите «Показать», чтобы сразу перейти к нужной настройке.</string>
     <string name="home_no_pc_paired">ПК пока не связан</string>
@@ -1248,7 +1248,7 @@
     <string name="settings_wireless_debugging_active">Elevated включён · буфер обмена синхронизируется автоматически</string>
     <string name="settings_wireless_debugging_hint">Настройте Elevated (отладка по Wi-Fi, Shizuku или root), чтобы буфер обмена синхронизировался в фоне, или используйте «Отправить буфер обмена» в уведомлении</string>
     <string name="banking_title">Пауза для банковских приложений</string>
-    <string name="banking_text">Некоторые банковские приложения не открываются, пока включены параметры для разработчиков, отладка или сервис специальных возможностей. Выберите их здесь: NectarLink выключит это, пока они открыты, и включит снова, когда вы из них выйдете.</string>
+    <string name="banking_text">Некоторые банковские приложения не открываются, пока включены режим разработчика, отладка или сервис специальных возможностей. Выберите их здесь: NectarLink выключит это, пока они открыты, и включит снова, когда вы из них выйдете.</string>
     <plurals name="banking_chosen">
         <item quantity="one">Выбрано %1$d приложение</item>
         <item quantity="few">Выбрано %1$d приложения</item>
@@ -1265,7 +1265,7 @@
     <string name="banking_shortcut_hint">Если приложение всё равно не открывается, запускайте его через ярлык: NectarLink сначала встанет на паузу, затем откроет его.</string>
     <string name="banking_channel">Пауза для банковских приложений</string>
     <string name="banking_paused_title">Пауза для банковского приложения</string>
-    <string name="banking_paused_text">Параметры для разработчиков, отладка и сервис специальных возможностей NectarLink выключены, пока вы не выйдете из приложения.</string>
+    <string name="banking_paused_text">Режим разработчика, отладка и сервис специальных возможностей NectarLink выключены, пока вы не выйдете из приложения.</string>
     <string name="banking_turn_back_on">Включить снова</string>
     <string name="action_done">Готово</string>
     <string name="device_name_in_profile">%1$s (%2$s)</string>
