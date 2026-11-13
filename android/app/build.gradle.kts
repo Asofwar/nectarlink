@@ -56,18 +56,21 @@ android {
     }
 
     // Release builds are signed with the project's key when CI provides it
-    // (NECTARLINK_KEYSTORE: a .jks file; NECTARLINK_KEYSTORE_PASSWORD).
+    // (NECTARLINK_KEYSTORE: a .jks file; NECTARLINK_KEYSTORE_PASSWORD; optionally
+    // NECTARLINK_KEY_ALIAS, default "nectarlink", and NECTARLINK_KEY_PASSWORD,
+    // default the keystore's password).
     // Without it, a local release build is signed with the debug key so it can be
     // installed over a debug build for testing. Never publish such a build: the
     // release workflow refuses to run without the key and verifies the signature.
     val keystore = System.getenv("NECTARLINK_KEYSTORE")?.let(::file)?.takeIf { it.exists() }
+    fun env(name: String) = System.getenv(name)?.takeIf { it.isNotBlank() }
     signingConfigs {
         if (keystore != null) {
             create("release") {
                 storeFile = keystore
                 storePassword = System.getenv("NECTARLINK_KEYSTORE_PASSWORD")
-                keyAlias = "nectarlink"
-                keyPassword = System.getenv("NECTARLINK_KEYSTORE_PASSWORD")
+                keyAlias = env("NECTARLINK_KEY_ALIAS") ?: "nectarlink"
+                keyPassword = env("NECTARLINK_KEY_PASSWORD") ?: System.getenv("NECTARLINK_KEYSTORE_PASSWORD")
             }
         }
     }
