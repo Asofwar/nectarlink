@@ -204,7 +204,8 @@ jobs:
   desktop-macos:
     name: macOS app
     needs: changes
-    if: needs.changes.outputs.code == 'true'
+    # Not on forks: they ship no macOS build, and a macOS runner can be hours away.
+    if: needs.changes.outputs.code == 'true' && !github.event.repository.fork
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v7
@@ -228,7 +229,8 @@ jobs:
   desktop-macos-release:
     name: macOS app (release build)
     needs: changes
-    if: needs.changes.outputs.code == 'true'
+    # Not on forks: they ship no macOS build, and a macOS runner can be hours away.
+    if: needs.changes.outputs.code == 'true' && !github.event.repository.fork
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v7
