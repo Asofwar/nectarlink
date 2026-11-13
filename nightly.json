@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "channel": "nightly",
+  "version": "0.1.6-nightly.11",
+  "name": "Azure Bluebell",
+  "published": "2026-11-13T19:21:13Z",
+  "notes": "https://github.com/Asofwar/nectarlink/releases/tag/v0.1.6-nightly.11",
+  "files": [
+    {
+      "name": "Nectarlink-0.1.6-nightly.11-android.apk",
+      "url": "https://github.com/Asofwar/nectarlink/releases/download/v0.1.6-nightly.11/Nectarlink-0.1.6-nightly.11-android.apk",
+      "sha256": "37fbfa7cc1072fdf69e319aa2e2049af82847e898bc0adc24d21f8e77db77a5f",
+      "size": 54948310
+    },
+    {
+      "name": "Nectarlink-0.1.6-nightly.11-arm64-setup.exe",
+      "url": "https://github.com/Asofwar/nectarlink/releases/download/v0.1.6-nightly.11/Nectarlink-0.1.6-nightly.11-arm64-setup.exe",
+      "sha256": "a6fcaedee71cfa51baf0cd43cf04bc6e965cdc6c72db3175a45515564bd7a533",
+      "size": 39442511
+    },
+    {
+      "name": "Nectarlink-0.1.6-nightly.11-linux-x86_64.tar.gz",
+      "url": "https://github.com/Asofwar/nectarlink/releases/download/v0.1.6-nightly.11/Nectarlink-0.1.6-nightly.11-linux-x86_64.tar.gz",
+      "sha256": "01c5f5fa5c5fd668e49f89d9a83e5476fa98db6e4bb3d98047012a0a4fe7f501",
+      "size": 71124128
+    },
+    {
+      "name": "Nectarlink-0.1.6-nightly.11-x64-setup.exe",
+      "url": "https://github.com/Asofwar/nectarlink/releases/download/v0.1.6-nightly.11/Nectarlink-0.1.6-nightly.11-x64-setup.exe",
+      "sha256": "0d0ef128418b22f752841f48f5742d6f70749bb57f2fdb559969d1bd4ddb214c",
+      "size": 42907054
+    },
+    {
+      "name": "Nectarlink-0.1.6-nightly.11-x86_64.AppImage",
+      "url": "https://github.com/Asofwar/nectarlink/releases/download/v0.1.6-nightly.11/Nectarlink-0.1.6-nightly.11-x86_64.AppImage",
+      "sha256": "f220c1479d70baa9a700e03780d7e4585bd7e1cd79f3b2a5205acc9af2165a36",
+      "size": 63961592
+    },
+    {
+      "name": "install.sh",
+      "url": "https://github.com/Asofwar/nectarlink/releases/download/v0.1.6-nightly.11/install.sh",
+      "sha256": "b7cdc18c1789d75e26c8d972985da2fd78bd7117eebf0d384d096760c4203821",
+      "size": 23634
+    },
+    {
+      "name": "nectarlink-0.1.6-nightly.11-1.x86_64.rpm",
+      "url": "https://github.com/Asofwar/nectarlink/releases/download/v0.1.6-nightly.11/nectarlink-0.1.6-nightly.11-1.x86_64.rpm",
+      "sha256": "01bce714c6ade86bbc5d1e01eff5b52ed2228d627aec293cfb4ea36b7377814f",
+      "size": 70147350
+    },
+    {
+      "name": "nectarlink_0.1.6-nightly.11_amd64.deb",
+      "url": "https://github.com/Asofwar/nectarlink/releases/download/v0.1.6-nightly.11/nectarlink_0.1.6-nightly.11_amd64.deb",
+      "sha256": "43ea22bb551ce8e9b22285bfa31741ab74417629b275b7844e5b16c93673dee0",
+      "size": 51292428
+    }
+  ]
+}
