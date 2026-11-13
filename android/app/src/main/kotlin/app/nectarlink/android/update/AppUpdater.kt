@@ -640,14 +640,14 @@ class AppUpdater(context: Context) {
 
     companion object {
         private const val TAG = "AppUpdater"
-        private const val LATEST = "https://api.github.com/repos/thtbee/nectarlink/releases/latest"
+        private const val LATEST = "https://api.github.com/repos/Asofwar/nectarlink/releases/latest"
 
         /** The channels' feeds: `<FEEDS><channel>.json`. */
-        private const val FEEDS = "https://raw.githubusercontent.com/thtbee/nectarlink/channels/"
+        private const val FEEDS = "https://raw.githubusercontent.com/Asofwar/nectarlink/channels/"
 
         /** The only place an update is downloaded from. */
-        private const val RELEASE_DOWNLOADS = "https://github.com/thtbee/nectarlink/releases/download/"
-        private const val NOTES = "https://github.com/thtbee/nectarlink/"
+        private const val RELEASE_DOWNLOADS = "https://github.com/Asofwar/nectarlink/releases/download/"
+        private const val NOTES = "https://github.com/Asofwar/nectarlink/"
         private const val FEED_SCHEMA = 1
         private const val MAX_FEED = 64 * 1024
         private const val UPDATE_CHANNEL = "channel"

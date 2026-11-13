@@ -14,6 +14,9 @@ on:
         description: "Build even if nothing changed since the last nightly"
         type: boolean
         default: false
+  # Daily too, so installs on Nightly get what reached main; a day with no change builds nothing.
+  schedule:
+    - cron: "17 2 * * *"
 
 permissions:
   contents: write
@@ -87,18 +90,29 @@ jobs:
               no "CI hasn't built and tested the code at ${commit:0:7} yet"
           fi
 
+          # A fork counts the repository it came from too, so its builds sort
+          # after the ones that one already shipped.
+          parent=$(gh api "repos/$GITHUB_REPOSITORY" --jq '.parent.full_name // empty')
+          released() {
+            for repo in "$GITHUB_REPOSITORY" $parent; do
+              gh release view "v$1" --repo "$repo" --json isDraft --jq '.isDraft' 2>/dev/null | grep -qx false && return 0
+            done
+            return 1
+          }
           # The version on the way: what Cargo.toml says, or the next patch
           # when that's already released.
           current=$(grep -m1 '^version = ' Cargo.toml | cut -d'"' -f2)
-          if gh release view "v$current" --repo "$GITHUB_REPOSITORY" --json isDraft --jq '.isDraft' 2>/dev/null | grep -qx false; then
+          if released "$current"; then
             IFS=. read -r major minor patch <<< "$current"
             base="$major.$minor.$((patch + 1))"
           else
             base="$current"
           fi
           # The next number on the way to it (Android takes up to 998).
-          last=$(gh release list --repo "$GITHUB_REPOSITORY" --limit 100 --json tagName \
-            --jq "[.[].tagName | select(startswith(\"v$base-nightly.\")) | ltrimstr(\"v$base-nightly.\") | tonumber] | max // 0")
+          last=$(for repo in "$GITHUB_REPOSITORY" $parent; do
+            gh release list --repo "$repo" --limit 100 --json tagName \
+              --jq "[.[].tagName | select(startswith(\"v$base-nightly.\")) | ltrimstr(\"v$base-nightly.\") | tonumber] | max // 0"
+          done | sort -n | tail -1)
           number=$((last + 1))
           [ "$number" -le 998 ] || { echo "::error::998 nightlies on the way to $base; release it first"; exit 1; }
           version="$base-nightly.$number"

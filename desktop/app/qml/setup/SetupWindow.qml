@@ -511,7 +511,7 @@ NativeWindow {
                 font.pixelSize: 13
                 font.underline: true
                 color: window.honey
-                text: "github.com/thtbee/nectarlink/releases/latest"
+                text: "github.com/Asofwar/nectarlink/releases"
                 Accessible.role: Accessible.Link
                 Accessible.name: qsTr("Open the Android app download page")
                 Accessible.onPressAction: Setup.openAndroidPage()
